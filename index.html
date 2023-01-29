@@ -11,6 +11,11 @@
 
 <body onload="init()">
   <main>
+
+    <button class="dificuldade" id="easy" onclick="easy()">Fácil</button>
+    <button class="dificuldade" id="medium" onclick="medium()">Médio</button>
+    <button class="dificuldade" id="hard" onclick="hard()">Difícil</button>
+
     <div id="welcomeScreen">
       <h2>Adivinhe o número <br />1 - 100</h2>
     </div>
@@ -30,7 +35,9 @@
           <span id="guesses">0</span>
         </div>
       </section>
-      <button id="newGameButton" onclick="newGame()">Novo jogo</button>
+      <div class="button">
+        <button class="newGameButton" id="newGameButton" onclick="newGame()">Novo jogo</button>
+      </div>
     </div>
   </main>
   <script src="index.js"></script>
